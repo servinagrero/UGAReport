@@ -1,0 +1,80 @@
+\documentclass{UGA_Report}
+
+%% Main fonts used for the document
+\usepackage[scaled]{helvet}
+\usepackage[oldstyle,scale=0.7]{sourcecodepro}
+
+%% Metadata
+% Course and document title
+\documentdata{Test Course}{Test document}
+\author{Sergio Vinagrero Gutierrez} % TODO: Allow more authors
+
+
+\begin{document}
+
+% Print the title page
+\maintitle
+
+% Print the table of contents in a new page. By default, a blank page is left after the title page
+% To print list of figures and tables just pass `lists` as argument
+\printcontents
+% \printcontents[lists]
+
+\section{Section label}\label{section_label}
+Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur,
+quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem,
+vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit
+veritus placerat per.
+
+\subsection{Subsection label}
+Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur,
+quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem,
+vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit
+veritus placerat per.
+
+\subsubsection{Subsubsection label}
+Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur,
+quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem,
+vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit
+veritus placerat per.
+
+Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur,
+quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem,
+vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit
+veritus placerat per.\\
+
+This is a reference to the \nameref{section_label}
+
+This is an \href{https://github.com/servinagrero/UGAReport}{hyperlink to my GitHub repository}.
+
+This is an url: \url{https://github.com/servinagrero/UGAReport}
+
+\begin{equation}
+    \label{eq:1}
+    \sum_{i=0}^{\infty} a_i x^i
+\end{equation}
+
+\begin{table}[h!]
+    \centering    \begin{tabular}{|L{0.3\textwidth}|C{0.3\textwidth}|R{0.3\textwidth}|}
+      \hline
+      \hcell{Left} & \hcell{Center} & \hcell{Right} \\ \hline
+      Left aligned cell with fixed text in it. & Centered aligned cell with fixed text in it. & Right aligned cell with fixed text in it. \\ \hline
+    \end{tabular}
+    \caption{This is a caption test.}
+\end{table}
+
+\begin{itemize}
+    \item Item 1
+    \item Item 2
+    \begin{itemize}
+        \item Item 2.1
+        \begin{itemize}
+            \item Item 2.1.1
+            \begin{itemize}
+                \item Item 2.1.1
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\end{document}
